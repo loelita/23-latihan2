@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    tools:context=".Main2Activity">
+
+    <TextView
+        android:id="@+id/txtsisi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Masukan Panjang sisi" />
+
+    <EditText
+        android:id="@+id/editsisi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_bellow="@+id/txtsisi"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:id="@+id/btnOke"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Oke"
+        android:layout_bellow="@+id/editsisi"
+        android:layout_centerHorizontal="true"
+        android:background="#f01111"/>
+
+    <TextView
+        android:id="@+id/txtluas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Luas Persegi"
+        android:layout_bellow="@+id/btnOke"
+        android:layout_alignParentStart="true"/>
+
+    <EditText
+        android:id="@+id/edithasil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_bellow="@+id/txtluas"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="@+id/editsisi"/>
+
+    <TextView
+        android:id="@+id/txtkeliling"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Keliling Persegi"
+        android:layout_bellow="@+id/edithasil"
+        android:layout_alignParentStart="true"/>
+
+    <EditText
+        android:id="@+id/editkeliling"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_bellow="@+id/txtkeliling"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"/>
+
+</android.support.constraint.ConstraintLayout>
